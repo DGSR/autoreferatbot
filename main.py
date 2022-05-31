@@ -4,7 +4,7 @@ from aiogram import Bot
 from aiogram.dispatcher import Dispatcher
 from aiogram.utils.executor import start_webhook
 from aiogram import Bot, types
-from text import t1,t2,t3,t4,t5
+from text import t1,t2,t3
 
 
 TOKEN = os.getenv('BOT_TOKEN')
@@ -36,8 +36,6 @@ async def echo(message: types.Message):
     await message.answer(t1)
     await message.answer(t2)
     await message.answer(t3)
-    await message.answer(t4)
-    await message.answer(t5)
 
 
 if __name__ == '__main__':
