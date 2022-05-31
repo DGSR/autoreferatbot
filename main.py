@@ -8,7 +8,7 @@ from text import t1,t2,t3
 
 
 TOKEN = os.getenv('BOT_TOKEN')
-bot = Bot(token=TOKEN)
+bot = Bot(token=TOKEN, disable_web_page_preview=True)
 dp = Dispatcher(bot)
 
 HEROKU_APP_NAME = os.getenv('HEROKU_APP_NAME')
